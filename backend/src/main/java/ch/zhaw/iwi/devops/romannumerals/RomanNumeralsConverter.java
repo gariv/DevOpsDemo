@@ -30,6 +30,12 @@ public class RomanNumeralsConverter {
     	if (number == 9) {
     		return "IX";
     	}
+    	if (number == 10) {
+    		return "X";
+    	}
+    	if (number > 10) {
+    		return "X" + convert(number - 10);
+    	}
     	return "";
     }
 }
