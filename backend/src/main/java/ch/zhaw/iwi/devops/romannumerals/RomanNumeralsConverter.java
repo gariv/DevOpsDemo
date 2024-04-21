@@ -27,6 +27,9 @@ public class RomanNumeralsConverter {
     	if (number == 8) {
     		return convert(7) + "I";
     	}
+    	if (number == 9) {
+    		return "IX";
+    	}
     	return "";
     }
 }
