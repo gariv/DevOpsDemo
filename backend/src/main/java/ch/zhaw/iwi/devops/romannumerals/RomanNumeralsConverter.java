@@ -12,6 +12,9 @@ public class RomanNumeralsConverter {
     	if (number == 3) {
     		return "I" + convert(2);
     	}
+    	if (number == 4) {
+    		return "IV";
+    	}
     	return "";
     }
 }
