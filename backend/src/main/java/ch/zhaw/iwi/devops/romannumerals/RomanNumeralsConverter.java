@@ -6,6 +6,12 @@ public class RomanNumeralsConverter {
     	if (number == 1) {
     		return "I";
     	}
+    	if (number == 2) {
+    		return "I" + convert(1);
+    	}
+    	if (number == 3) {
+    		return "I" + convert(2);
+    	}
     	return "";
     }
 }
