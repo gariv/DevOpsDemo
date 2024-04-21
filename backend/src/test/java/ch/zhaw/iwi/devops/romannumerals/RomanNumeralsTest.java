@@ -16,4 +16,10 @@ public class RomanNumeralsTest {
         RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
         Assertions.assertEquals("II", romanNumerals.convert(2));
     }
+    
+    @Test
+    void testThree() {
+        RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
+        Assertions.assertEquals("III", romanNumerals.convert(3));
+    }
 }
