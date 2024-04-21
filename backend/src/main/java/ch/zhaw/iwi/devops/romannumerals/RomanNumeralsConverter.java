@@ -33,8 +33,11 @@ public class RomanNumeralsConverter {
     	if (number == 10) {
     		return "X";
     	}
-    	if (number > 10) {
+    	if (number > 10 && number < 50) {
     		return "X" + convert(number - 10);
+    	}
+    	if (number == 50) {
+    		return "L";
     	}
     	return "";
     }
