@@ -18,6 +18,15 @@ public class RomanNumeralsConverter {
     	if (number == 5) {
     		return "V";
     	}
+    	if (number == 6) {
+    		return convert(5) + "I";
+    	}
+    	if (number == 7) {
+    		return convert(6) + "I";
+    	}
+    	if (number == 8) {
+    		return convert(7) + "I";
+    	}
     	return "";
     }
 }
