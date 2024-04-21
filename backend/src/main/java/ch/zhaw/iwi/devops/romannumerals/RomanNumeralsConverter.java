@@ -2,6 +2,9 @@ package ch.zhaw.iwi.devops.romannumerals;
 
 public class RomanNumeralsConverter {
 
+	/*
+	 * Works between 1 - 89
+	 */
     public String convert(int number) {
     	if (number == 1) {
     		return "I";
@@ -39,6 +42,9 @@ public class RomanNumeralsConverter {
     	if (number == 50) {
     		return "L";
     	}
-    	return "";
+    	if (number > 50 && number <= 89) {
+    		return "L" + convert(number - 50);
+    	}
+    	return "The conversion is not (yet) defined";
     }
 }
