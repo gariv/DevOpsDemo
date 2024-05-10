@@ -69,4 +69,9 @@ public class RomanNumeralsTest {
         RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
         Assertions.assertEquals("LXXXII", romanNumerals.convert(82));
     }
+    @Test
+    void testHundred() {
+        RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
+        Assertions.assertEquals("The conversion is not (yet) defined", romanNumerals.convert(100));
+    }
 }
