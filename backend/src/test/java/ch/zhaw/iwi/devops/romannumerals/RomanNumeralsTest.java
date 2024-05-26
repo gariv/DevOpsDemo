@@ -46,6 +46,12 @@ class RomanNumeralsTest {
         RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
         Assertions.assertEquals("IX", romanNumerals.convert(9));
     }
+
+    @Test
+    void testTen() {
+        RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
+        Assertions.assertEquals("X", romanNumerals.convert(10));
+    }
     
     @Test
     void testTwentyOne() {
@@ -62,5 +68,11 @@ class RomanNumeralsTest {
     void testEightyTwo() {
         RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
         Assertions.assertEquals("LXXXII", romanNumerals.convert(82));
+    }
+
+    @Test
+    void testHundred() {
+        RomanNumeralsConverter romanNumerals = new RomanNumeralsConverter();
+        Assertions.assertEquals("The conversion is not (yet) defined", romanNumerals.convert(100));
     }
 }
